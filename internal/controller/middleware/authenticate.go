@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/kerak19/template/internal/controller/middleware/reqctx"
-	"github.com/kerak19/template/internal/repo/usersdb"
+	"github.com/islanzari/template/internal/controller/middleware/reqctx"
+	"github.com/islanzari/template/internal/repo/usersdb"
 	"github.com/sirupsen/logrus"
 )
 

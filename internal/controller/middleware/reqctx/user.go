@@ -3,7 +3,7 @@ package reqctx
 import (
 	"context"
 
-	"github.com/kerak19/template/internal/repo/usersdb"
+	"github.com/islanzari/template/internal/repo/usersdb"
 )
 
 // WithUser extends context with request's issuer

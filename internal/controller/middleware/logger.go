@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	"github.com/kerak19/template/internal/controller/middleware/reqctx"
+	"github.com/islanzari/template/internal/controller/middleware/reqctx"
 	"github.com/sirupsen/logrus"
 )
 

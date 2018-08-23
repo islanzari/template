@@ -6,10 +6,10 @@ import (
 
 	"github.com/SermoDigital/jose/crypto"
 	"github.com/SermoDigital/jose/jws"
+	"github.com/islanzari/template/internal/controller/middleware/reqctx"
+	"github.com/islanzari/template/internal/request"
+	"github.com/islanzari/template/internal/validate"
 	"github.com/julienschmidt/httprouter"
-	"github.com/kerak19/template/internal/controller/middleware/reqctx"
-	"github.com/kerak19/template/internal/request"
-	"github.com/kerak19/template/internal/validate"
 	"github.com/sirupsen/logrus"
 )
 

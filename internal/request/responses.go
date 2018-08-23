@@ -3,7 +3,7 @@ package request
 import (
 	"net/http"
 
-	"github.com/kerak19/template/internal/jsonw"
+	"github.com/islanzari/template/internal/jsonw"
 )
 
 // Success writes Success response to provided ResponseWriter along with body

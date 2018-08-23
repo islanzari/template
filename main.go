@@ -13,9 +13,9 @@ import (
 	"time"
 
 	"github.com/coreos/go-systemd/activation"
-	"github.com/kerak19/template/internal/config"
-	"github.com/kerak19/template/internal/controller"
-	"github.com/kerak19/template/internal/flags"
+	"github.com/islanzari/template/internal/config"
+	"github.com/islanzari/template/internal/controller"
+	"github.com/islanzari/template/internal/flags"
 	_ "github.com/lib/pq"
 	"github.com/mattes/migrate"
 	"github.com/mattes/migrate/database/postgres"

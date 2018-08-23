@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"errors"
 
-	"github.com/kerak19/template/internal/repo/usersdb"
+	"github.com/islanzari/template/internal/repo/usersdb"
 	"github.com/lhecker/argon2"
 )
 

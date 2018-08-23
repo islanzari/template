@@ -3,9 +3,9 @@ package users
 import (
 	"net/http"
 
+	"github.com/islanzari/template/internal/controller/middleware/reqctx"
+	"github.com/islanzari/template/internal/request"
 	"github.com/julienschmidt/httprouter"
-	"github.com/kerak19/template/internal/controller/middleware/reqctx"
-	"github.com/kerak19/template/internal/request"
 )
 
 // Me returns info of user's by id provided in authorization token

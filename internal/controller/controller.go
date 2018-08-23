@@ -5,11 +5,11 @@ import (
 	"database/sql"
 	"net/http"
 
+	"github.com/islanzari/template/internal/config"
+	"github.com/islanzari/template/internal/controller/middleware"
+	"github.com/islanzari/template/internal/controller/users"
+	"github.com/islanzari/template/internal/model"
 	"github.com/julienschmidt/httprouter"
-	"github.com/kerak19/template/internal/config"
-	"github.com/kerak19/template/internal/controller/middleware"
-	"github.com/kerak19/template/internal/controller/users"
-	"github.com/kerak19/template/internal/model"
 	"github.com/lhecker/argon2"
 	"github.com/sirupsen/logrus"
 )
