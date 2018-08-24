@@ -7,6 +7,7 @@ import (
 
 	"github.com/islanzari/template/internal/config"
 	"github.com/islanzari/template/internal/controller/middleware"
+	"github.com/islanzari/template/internal/controller/todos"
 	"github.com/islanzari/template/internal/controller/users"
 	"github.com/islanzari/template/internal/model"
 	"github.com/julienschmidt/httprouter"
@@ -24,11 +25,21 @@ func Controller(ctx context.Context, db *sql.DB, config config.Config, log logru
 		DB:     db,
 		Hasher: &hasher,
 	}
-
+	todoModel := model.Todos{
+		DB: db,
+	}
 	users := users.Handle{
 		Users:  usersModel,
 		Config: config,
 	}
+	todos := todos.Handle{
+		Todos: todoModel,
+	}
+	router.POST("/api/todos/", todos.CreateTodo)
+	router.GET("/api/todos/:id/", todos.FetchTodo)
+	router.GET("/api/todos/", todos.FetchTodos)
+	router.PATCH("/api/todos/:id/", todos.UpdateTodo)
+	router.DELETE("/api/todos/:id/", todos.DeleteTodo)
 
 	router.POST("/api/users/", users.Create)
 	router.GET("/api/me/", users.Me)
